@@ -1,0 +1,619 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="data" xml:space="preserve">
+    <value>// This is a template. Do not remove //# strings
+using System;
+using System.IO;
+using System.Resources;
+using System.Reflection;
+using System.Collections.Specialized;
+
+//#ZIPHEAD
+
+// for log only in winexe mode
+using System.Windows.Forms;
+
+//#AI
+//#UAI
+
+namespace netz
+{
+
+    //#NTSERVICE
+
+
+    public class NetzStarter//#VER
+    {
+        #region constants
+
+        private static readonly string Name = "Name";
+        private static readonly string Culture = "Culture";
+        internal static readonly string NetzSuffix = "//#EXTENSION";
+
+        #endregion constants
+
+        private static HybridDictionary cache = null;
+        private static ResourceManager rm = null;
+        private static System.Collections.ArrayList xrRm = null;
+
+        [STAThread()]
+        public static int Main(string[] args)
+        {
+            try
+            {
+                InitXR();
+                AppDomain currentDomain = AppDomain.CurrentDomain;
+                //#PATH
+
+                currentDomain.AssemblyResolve += new ResolveEventHandler(NetzResolveEventHandler);
+
+                //#MAINENTRYPOINT
+            }
+            catch (Exception ex)
+            {
+                string NR = " .NET Runtime: ";
+                Log("#Error: " + ex.GetType().ToString() + Environment.NewLine
+                    + ex.Message + Environment.NewLine
+                    + ex.StackTrace + Environment.NewLine
+                    + ex.InnerException + Environment.NewLine
+                    + "Using" + NR + Environment.Version.ToString() + Environment.NewLine
+                    + "Created with" + NR + //#CTNETVER);
+            return -1;
+            }
+        }
+
+        private static void InitXR()
+        {
+            try
+            {
+                string FILEP = "file:\\";
+                string EXT = "-netz.resources";
+                string path = Path.GetDirectoryName(System.Reflection.Assembly.GetEntryAssembly().Location);
+                if (path.StartsWith(FILEP)) path = path.Substring(FILEP.Length, path.Length - FILEP.Length);
+                string[] files = Directory.GetFiles(path, "*" + EXT);
+                if ((files != null) &amp;&amp; (files.Length &gt; 0))
+                {
+                    xrRm = new System.Collections.ArrayList();
+                    for (int i = 0; i &lt; files.Length; i++)
+                    {
+                        string name = Path.GetFileName(files[i]);
+                        name = name.Substring(0, name.Length - EXT.Length);
+                        ResourceManager temp = ResourceManager.CreateFileBasedResourceManager(name + "-netz", path, null);
+                        if (temp != null)
+                        {
+                            xrRm.Add(temp);
+                        }
+                    }
+                }
+            }
+            catch { }
+        }
+
+        public static int StartApp(string[] args)
+        {
+            byte[] data = GetResource("A6C24BF5-3690-4982-887E-11E1B159B249");
+            if (data == null) throw new Exception("application data cannot be found");
+            Assembly assembly = GetAssembly(data, Assembly.GetEntryAssembly().GetName().Name);
+            int returnCode = InvokeApp(assembly, args);
+            data = null;
+            return returnCode;
+        }
+
+        private static Assembly GetAssembly(byte[] data, string nomAssembly = "")
+        {
+            MemoryStream ms = null;
+            Assembly assembly = null;
+            try
+            {
+                ms = UnZip(data, nomAssembly);
+                ms.Seek(0, SeekOrigin.Begin);
+                assembly = Assembly.Load(ms.ToArray());
+            }
+            finally
+            {
+                if (ms != null) ms.Close();
+                ms = null;
+            }
+            return assembly;
+        }
+
+        //#ZIPSTART
+        // supports -z option
+        private static Assembly LoadZipDll()
+        {
+            Assembly assembly = null;
+            MemoryStream ms = null;
+            try
+            {
+                byte[] zip = GetResource("//#ZIPDLL.dll");
+                if (zip == null) return null;
+                ms = new MemoryStream(zip);
+                assembly = Assembly.Load(ms.ToArray());
+            }
+            catch
+            {
+                assembly = null;
+            }
+            finally
+            {
+                if (ms != null) ms.Close();
+                ms = null;
+            }
+            return assembly;
+        }
+        //#ZIPEND
+
+        private static int InvokeApp(Assembly assembly, string[] args)
+        {
+            MethodInfo mi = assembly.EntryPoint;
+            ParameterInfo[] pars = mi.GetParameters();
+            object[] iargs = null;
+            if ((pars != null) &amp;&amp; (pars.Length &gt; 0))
+            {
+                iargs = new object[] { args };
+            }
+            object returnValue = mi.Invoke(null, iargs);
+            if (returnValue == null) return 0;
+            if (returnValue is int) return (int)returnValue;
+            return 0;
+        }
+
+        private static Assembly NetzResolveEventHandler(object sender, ResolveEventArgs args)
+        {
+            if (inResourceResolveFlag) return null;
+            return GetAssemblyByName(args.Name);
+        }
+
+        private static bool inResourceResolveFlag = false;
+        internal static byte[] GetResource(string id)
+        {
+            byte[] data = null;
+            if (rm == null)
+            {
+                rm = new ResourceManager("app", Assembly.GetExecutingAssembly());
+            }
+            try
+            {
+                inResourceResolveFlag = true;
+                string temp = MangleDllName(id);
+                if ((data == null) &amp;&amp; (xrRm != null))
+                {
+                    for (int i = 0; i &lt; xrRm.Count; i++)
+                    {
+                        try
+                        {
+                            ResourceManager xr = (ResourceManager)xrRm[i];
+                            if (xr != null) data = (byte[])xr.GetObject(temp);
+                        }
+                        catch { }
+                        if (data != null) break;
+                    }
+                }
+                if (data == null)
+                {
+                    data = (byte[])rm.GetObject(temp);
+                }
+            }
+            finally
+            {
+                inResourceResolveFlag = false;
+            }
+            return data;
+        }
+
+        private static string MangleDllName(string dll)
+        {
+            string temp = dll;
+            temp = temp.Replace(" ", "!1");
+            temp = temp.Replace(",", "!2");
+            temp = temp.Replace(".Resources", "!3");
+            temp = temp.Replace(".resources", "!3");
+            temp = temp.Replace("Culture", "!4");
+            return temp;
+        }
+
+        internal static MemoryStream UnZip(byte[] data, string nomAssembly = "")
+        {
+            //#ZIPBODY
+        }
+
+        #region probe
+
+        internal static byte[] ResolveDLL(StringDictionary assName)
+        {
+            string temp = null;
+            byte[] data = null;
+            string culture = assName[Culture];
+            string dllName = assName[Name];
+
+            bool neutral = (culture == null) || culture.ToLower().Equals("neutral");
+            AppDomain cd = AppDomain.CurrentDomain;
+            StringCollection probePaths = new StringCollection();
+
+            temp = cd.SetupInformation.ApplicationBase;
+            if (!neutral)
+            {
+                temp = Path.Combine(temp, culture);
+            }
+            probePaths.Add(temp);
+            probePaths.Add(Path.Combine(temp, dllName));
+            data = ProbeDirs(probePaths, dllName);
+            if (data != null) return data;
+
+            probePaths = new StringCollection();
+            temp = cd.SetupInformation.PrivateBinPath;
+            if ((temp == null) || (temp.Trim().Length &lt;= 0)) return null;
+            string[] paths = temp.Split(Path.PathSeparator);
+            for (int i = 0; i &lt; paths.Length; i++)
+            {
+                temp = paths[i].Trim(' ', '\t', Path.PathSeparator);
+                if (!Path.IsPathRooted(temp))
+                    temp = Path.Combine(cd.SetupInformation.ApplicationBase, temp);
+                if (!neutral)
+                {
+                    temp = Path.Combine(temp, culture);
+                }
+                probePaths.Add(temp);
+                probePaths.Add(Path.Combine(temp, dllName));
+            }
+            return ProbeDirs(probePaths, dllName);
+        }
+
+        private static byte[] ProbeDirs(StringCollection probePaths, string assName)
+        {
+            for (int i = 0; i &lt; probePaths.Count; i++)
+            {
+                string temp = Path.Combine(probePaths[i], assName + NetzSuffix);
+                if (File.Exists(temp)) return ReadFile(temp);
+            }
+            return null;
+        }
+
+        private static byte[] ReadFile(string file)
+        {
+            FileStream fs = null;
+            byte[] buffer = null;
+            try
+            {
+                fs = File.OpenRead(file);
+                buffer = new byte[fs.Length];
+                fs.Read(buffer, 0, buffer.Length);
+                fs.Flush();
+            }
+            finally
+            {
+                if (fs != null) fs.Close();
+                fs = null;
+            }
+            return buffer;
+        }
+
+        #endregion probe
+
+        private static void Log(string s)
+        {
+            MessageBox.Show(null, s, "Error");
+        }
+
+        internal static Assembly GetAssemblyByName(string name)
+        {
+            if (name == null) return null;
+            if (cache == null) cache = new HybridDictionary();
+            name = name.Trim();
+            string tname = name.ToLower();
+            if (cache[tname] != null)
+            {
+                return (Assembly)cache[tname];
+            }
+            else
+            {
+                StringDictionary assName = ParseAssName(name);
+                string dllName = assName[Name];
+                if (dllName == null) return null;
+                byte[] data = null;
+                //#ZIPSTART
+                if (dllName.ToLower().Equals("//#ZIPDLL"))
+                {
+                    Assembly temp = LoadZipDll();
+                    cache[tname] = temp;
+                    return temp;
+                }
+                //#ZIPEND
+                data = GetResource(name);
+                if (data == null)
+                {
+                    data = GetResource(name.ToLower());
+                }
+                if (data == null)
+                {
+                    data = GetResource(dllName);
+                }
+                if (data == null)
+                {
+                    data = GetResource(dllName.ToLower());
+                }
+                if (data == null)
+                {
+                    data = GetResource(Path.GetFileNameWithoutExtension(dllName).ToLower());
+                }
+                //#OPSSTART
+                if (data == null)
+                {
+                    try
+                    {
+                        data = ResolveDLL(assName);
+                    }
+                    catch
+                    {
+                        data = null;
+                    }
+                }
+                //#OPSEND
+                if (data == null) return null;
+                Assembly temp1 = GetAssembly(data, name);
+                data = null;
+                cache[tname] = temp1;
+                return temp1;
+            }
+        }
+
+        internal static StringDictionary ParseAssName(string fullAssName)
+        {
+            StringDictionary assName = new StringDictionary();
+            string[] parts = fullAssName.Split(',');
+            for (int i = 0; i &lt; parts.Length; i++)
+            {
+                string[] temp = parts[i].Trim(' ', ',').Split('=');
+                if (temp.Length &lt; 2) assName.Add(Name, temp[0]);
+                else assName.Add(temp[0].Trim(' ', '='), temp[1].Trim(' ', '='));
+            }
+            return assName;
+        }
+    }
+}</value>
+  </data>
+  <data name="serviceData" xml:space="preserve">
+    <value>    [System.ComponentModel.RunInstaller(true)]
+    public class ProjectInstaller : System.Configuration.Install.Installer
+    {
+        public static readonly string SERVICENAME = //#NTS_NAME;
+
+        private System.ServiceProcess.ServiceProcessInstaller serviceProcessInstaller;
+        private System.ServiceProcess.ServiceInstaller serviceInstaller;
+
+        public ProjectInstaller()
+        {
+            serviceInstaller = new System.ServiceProcess.ServiceInstaller();
+            serviceProcessInstaller = new System.ServiceProcess.ServiceProcessInstaller();
+
+            serviceProcessInstaller.Account = System.ServiceProcess.ServiceAccount.LocalSystem;
+            serviceProcessInstaller.Username = //#NTS_USER;
+            serviceProcessInstaller.Password = //#NTS_PASS;
+
+            serviceInstaller.DisplayName = //#NTS_DISP_NAME;
+            serviceInstaller.ServiceName = ProjectInstaller.SERVICENAME;
+            serviceInstaller.StartType = //#NTS_START_TYPE;
+
+            Installers.AddRange(new System.Configuration.Install.Installer[] { serviceProcessInstaller, serviceInstaller });
+        }
+
+        public override string HelpText
+        {
+            get
+            {
+                return //#NTS_HELP;
+               }
+        }
+    }
+
+    public class NetzService : System.ServiceProcess.ServiceBase
+    {
+        protected System.Threading.Thread serviceThread;
+        protected System.Threading.ManualResetEvent resetEvent;
+        protected string[] args;
+
+        public NetzService(string[] args)
+        {
+            this.args = args;
+            resetEvent = new System.Threading.ManualResetEvent(false);
+            ServiceName = ProjectInstaller.SERVICENAME;
+            Init();
+        }
+
+        private void Init()
+        {
+            CanPauseAndContinue = false;
+            CanHandlePowerEvent = false;
+            CanShutdown = true;
+            CanStop = true;
+            AutoLog = false;
+        }
+
+        protected override void OnStart(string[] args)
+        {
+            if (serviceThread == null)
+            {
+                serviceThread = new System.Threading.Thread(new System.Threading.ThreadStart(ServiceThread));
+                serviceThread.IsBackground = true;
+                serviceThread.Start();
+            }
+        }
+
+        protected override void OnStop()
+        {
+            if (serviceThread != null)
+            {
+                serviceThread.Abort();
+            }
+        }
+
+        protected override void OnShutdown()
+        {
+            base.OnShutdown();
+        }
+
+        protected void ServiceThread()
+        {
+            try
+            {
+                NetzStarter.StartApp(args);
+                try
+                {
+                    // Run until the service is stopped, which raises the ThreadAbortException.
+                    resetEvent.WaitOne();
+                }
+                catch (System.Threading.ThreadAbortException)
+                {
+                    // Log thread exited
+                }
+            }
+            catch (Exception ex)
+            {
+                Log("Failed: " + ex.Message + " @ " + ex.StackTrace);
+            }
+            finally
+            {
+                serviceThread = null;
+            }
+        }
+
+        private void Log(string msg)
+        {
+            if (msg == null) msg = string.Empty;
+            try
+            {
+                if (!System.Diagnostics.EventLog.SourceExists(ServiceName))
+                {
+                    System.Diagnostics.EventLog.CreateEventSource(ServiceName, "NetzServiceLog");
+                }
+                System.Diagnostics.EventLog eventLog = new System.Diagnostics.EventLog();
+                eventLog.Source = ServiceName;
+                eventLog.WriteEntry(msg);
+                eventLog = null;
+            }
+            catch
+            {
+                System.Diagnostics.Debug.WriteLine("Netz: " + ServiceName + " Error: " + msg);
+            }
+        }
+    }
+</value>
+  </data>
+</root>
